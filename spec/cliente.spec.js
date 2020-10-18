@@ -30,3 +30,11 @@ test('Testando cpf undefined', () => {
     expect(cliente.validarCPF()).toBe(false);
 });
 
+test('testando nome retorno maiusculas', () => {
+    let cliente = new Cliente()
+    cliente.nome = 'MaRcOs PalLaDinO'
+    expect(cliente.tudoLetraMaiuscula()).toBe("MARCOS PALLADINO");
+})
+
+
+
